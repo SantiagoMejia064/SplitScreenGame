@@ -1,48 +1,31 @@
-
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Movimiento : MonoBehaviour
 {
-    private NIS inputActions;
     private Vector2 moveInput;
-    public float speed = 5f;
+    [SerializeField] private float speed = 5f;
 
     private float fuerzaSalto = 5f;
     private Rigidbody rb;
 
     private void Awake()
     {
-        inputActions = new NIS();
         rb = GetComponent<Rigidbody>();
     }
 
-    private void OnEnable()
+    void Start()
     {
-        inputActions.Player.Enable();
-
-        inputActions.Player.Move.performed += OnMove;
-        inputActions.Player.Move.canceled += OnMove;
-
-        inputActions.Player.Jump.performed += OnJump;
+        GetComponent<Renderer>().material.color = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f));
     }
 
-    private void OnDisable()
+
+    private void OnMove(InputValue input)
     {
-        inputActions.Player.Move.performed -= OnMove;
-        inputActions.Player.Move.canceled -= OnMove;
-
-        inputActions.Player.Jump.performed -= OnJump;
-
-        inputActions.Player.Disable();
+        moveInput = input.Get<Vector2>();
     }
 
-    private void OnMove(InputAction.CallbackContext context)
-    {
-        moveInput = context.ReadValue<Vector2>();
-    }
-
-    private void OnJump(InputAction.CallbackContext context)
+    private void OnJump(InputValue input)
     {
         Debug.Log("Saltar");
         rb.AddForce(Vector3.up * fuerzaSalto, ForceMode.Impulse);
