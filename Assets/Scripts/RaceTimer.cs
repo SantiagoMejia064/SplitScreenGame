@@ -17,6 +17,8 @@ public class RaceTimer : MonoBehaviour
 
     private void OnEnable()
     {
+        Movimiento.RaceStarted += HandleRaceStarted;
+
         if (PlayerInputManager.instance != null)
         {
             PlayerInputManager.instance.onPlayerJoined += HandlePlayerJoined;
@@ -25,7 +27,7 @@ public class RaceTimer : MonoBehaviour
 
     private void Start()
     {
-        if (HasAnyPlayer())
+        if (Movimiento.carreraIniciada)
         {
             StartTimer();
         }
@@ -33,6 +35,8 @@ public class RaceTimer : MonoBehaviour
 
     private void OnDisable()
     {
+        Movimiento.RaceStarted -= HandleRaceStarted;
+
         if (PlayerInputManager.instance != null)
         {
             PlayerInputManager.instance.onPlayerJoined -= HandlePlayerJoined;
@@ -41,11 +45,6 @@ public class RaceTimer : MonoBehaviour
 
     private void Update()
     {
-        if (!timerRunning && HasAnyPlayer())
-        {
-            StartTimer();
-        }
-
         if (!timerRunning)
         {
             return;
@@ -57,10 +56,12 @@ public class RaceTimer : MonoBehaviour
 
     private void HandlePlayerJoined(PlayerInput playerInput)
     {
-        if (!timerRunning)
-        {
-            StartTimer();
-        }
+        UpdateTimerText();
+    }
+
+    private void HandleRaceStarted()
+    {
+        StartTimer();
     }
 
     private void StartTimer()
@@ -100,16 +101,5 @@ public class RaceTimer : MonoBehaviour
                 return;
             }
         }
-    }
-
-    private bool HasAnyPlayer()
-    {
-        if (PlayerInput.all.Count > 0)
-        {
-            return true;
-        }
-
-        Movimiento[] players = FindObjectsByType<Movimiento>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
-        return players.Length > 0;
     }
 }

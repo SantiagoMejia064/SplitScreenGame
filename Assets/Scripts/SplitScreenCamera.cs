@@ -21,7 +21,7 @@ public class SplitScreenCamera : MonoBehaviour
         {
             index = playerInput.playerIndex;
             playerCanvas = playerInput.GetComponentInChildren<Canvas>(true);
-            playerLabel = playerInput.GetComponentInChildren<TextMeshProUGUI>(true);
+            playerLabel = FindPlayerLabel(playerInput);
         }
 
         SetupPlayerCanvas();
@@ -95,6 +95,9 @@ public class SplitScreenCamera : MonoBehaviour
 
         playerCanvas.renderMode = RenderMode.ScreenSpaceCamera;
         playerCanvas.worldCamera = cam;
+        playerCanvas.planeDistance = cam.nearClipPlane + 0.1f;
+        playerCanvas.overrideSorting = true;
+        playerCanvas.sortingOrder = 100;
     }
 
     private void UpdatePlayerLabel()
@@ -105,5 +108,27 @@ public class SplitScreenCamera : MonoBehaviour
         }
 
         playerLabel.text = $"JUGADOR {index + 1}";
+    }
+
+    private TextMeshProUGUI FindPlayerLabel(PlayerInput playerInput)
+    {
+        TextMeshProUGUI[] labels = playerInput.GetComponentsInChildren<TextMeshProUGUI>(true);
+        foreach (TextMeshProUGUI label in labels)
+        {
+            if (label.gameObject.name == "Num Jugador")
+            {
+                return label;
+            }
+        }
+
+        foreach (TextMeshProUGUI label in labels)
+        {
+            if (label.gameObject.name != "StartText")
+            {
+                return label;
+            }
+        }
+
+        return null;
     }
 }
