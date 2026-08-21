@@ -16,12 +16,12 @@ public class Meta : MonoBehaviour
         jugadoresQueLlegaron.Add(other.gameObject);
         int puesto = jugadoresQueLlegaron.Count;
 
-        Debug.Log($"{other.gameObject.name} llegó en el puesto {puesto}");
+        Debug.Log($"{other.gameObject.name} llegÃ³ en el puesto {puesto}");
 
         if (puesto == 1)
         {
             juegoTerminado = true;
-            Debug.Log($"¡{other.gameObject.name} GANÓ la carrera!");
+            Debug.Log($"{other.gameObject.name} GANÃ“ la carrera!");
         }
     }
 }

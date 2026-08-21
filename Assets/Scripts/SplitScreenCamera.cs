@@ -1,10 +1,13 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 [RequireComponent(typeof(Camera))]
 public class SplitScreenCamera : MonoBehaviour
 {
     private Camera cam;
+    private Canvas playerCanvas;
+    private TextMeshProUGUI playerLabel;
     private int index;
     private int totalPlayers;
 
@@ -12,7 +15,34 @@ public class SplitScreenCamera : MonoBehaviour
     private void Awake()
     {
         cam = GetComponent<Camera>();
-        PlayerInputManager.instance.onPlayerJoined += HandlePlayerJoined;
+
+        PlayerInput playerInput = GetComponentInParent<PlayerInput>();
+        if (playerInput != null)
+        {
+            index = playerInput.playerIndex;
+            playerCanvas = playerInput.GetComponentInChildren<Canvas>(true);
+            playerLabel = playerInput.GetComponentInChildren<TextMeshProUGUI>(true);
+        }
+
+        SetupPlayerCanvas();
+        UpdatePlayerLabel();
+
+        if (PlayerInputManager.instance != null)
+        {
+            PlayerInputManager.instance.onPlayerJoined += HandlePlayerJoined;
+        }
+    }
+
+    void Start()
+    {
+        index = GetComponentInParent<PlayerInput>().playerIndex;
+        totalPlayers = PlayerInput.all.Count;
+        cam = GetComponent<Camera>();
+        cam.depth = index;
+
+        SetupCamera();
+        SetupPlayerCanvas();
+        UpdatePlayerLabel();
     }
 
     private void OnDestroy()
@@ -27,6 +57,8 @@ public class SplitScreenCamera : MonoBehaviour
     {
         totalPlayers = PlayerInput.all.Count;
         SetupCamera();
+        SetupPlayerCanvas();
+        UpdatePlayerLabel();
     }
 
     private void SetupCamera()
@@ -54,19 +86,24 @@ public class SplitScreenCamera : MonoBehaviour
 
     }
 
-    void Start()
+    private void SetupPlayerCanvas()
     {
-        index = GetComponentInParent<PlayerInput>().playerIndex;
-        totalPlayers = PlayerInput.all.Count;
-        cam = GetComponent<Camera>();
-        cam.depth = index;
+        if (playerCanvas == null)
+        {
+            return;
+        }
 
-        SetupCamera();
+        playerCanvas.renderMode = RenderMode.ScreenSpaceCamera;
+        playerCanvas.worldCamera = cam;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void UpdatePlayerLabel()
     {
+        if (playerLabel == null)
+        {
+            return;
+        }
 
+        playerLabel.text = $"JUGADOR {index + 1}";
     }
 }
