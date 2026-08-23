@@ -67,5 +67,6 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "SplitScreenGame.slnx"
+    "dotnet.defaultSolution": "SplitScreenGame.slnx",
+    "dotnet.preferCSharpExtension": true
 }
