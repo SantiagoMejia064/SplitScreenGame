@@ -103,14 +103,18 @@ public class Movimiento : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (IsGround(collision.transform))
+        {
             groundContacts++;
+        }
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
-            groundContacts--;
+        if (IsGround(collision.transform))
+        {
+            groundContacts = Mathf.Max(0, groundContacts - 1);
+        }
     }
 
     private void MarkReady()
@@ -187,5 +191,20 @@ public class Movimiento : MonoBehaviour
                 return;
             }
         }
+    }
+
+    private bool IsGround(Transform target)
+    {
+        while (target != null)
+        {
+            if (target.CompareTag("Ground"))
+            {
+                return true;
+            }
+
+            target = target.parent;
+        }
+
+        return false;
     }
 }
