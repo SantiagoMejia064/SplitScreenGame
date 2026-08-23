@@ -661,6 +661,7 @@ GameObject:
   - component: {fileID: 63807430}
   - component: {fileID: 63807432}
   - component: {fileID: 63807431}
+  - component: {fileID: 63807434}
   m_Layer: 0
   m_Name: Ocean (7)
   m_TagString: Untagged
@@ -740,6 +741,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63807429}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &63807434
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63807429}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!4 &65670142 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7966575911465106761, guid: 71f3a5a4e9a4f0c4e987e096c37a96e5, type: 3}
@@ -1842,6 +1864,7 @@ GameObject:
   - component: {fileID: 182566595}
   - component: {fileID: 182566597}
   - component: {fileID: 182566596}
+  - component: {fileID: 182566599}
   m_Layer: 0
   m_Name: Ocean (1)
   m_TagString: Untagged
@@ -1921,6 +1944,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 182566594}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &182566599
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182566594}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!1 &186322280
 GameObject:
   m_ObjectHideFlags: 0
@@ -3204,6 +3248,7 @@ GameObject:
   - component: {fileID: 337561491}
   - component: {fileID: 337561493}
   - component: {fileID: 337561492}
+  - component: {fileID: 337561495}
   m_Layer: 0
   m_Name: Ocean (13)
   m_TagString: Untagged
@@ -3283,6 +3328,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 337561490}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &337561495
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337561490}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!4 &337983569 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3328418456275108962, guid: 04a77e7e43a79ed478e212e4f5ede12d, type: 3}
@@ -4703,6 +4769,7 @@ GameObject:
   - component: {fileID: 557467128}
   - component: {fileID: 557467130}
   - component: {fileID: 557467129}
+  - component: {fileID: 557467132}
   m_Layer: 0
   m_Name: Ocean (5)
   m_TagString: Untagged
@@ -4782,6 +4849,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 557467127}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &557467132
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557467127}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!1001 &568857839
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5075,6 +5163,7 @@ GameObject:
   - component: {fileID: 592524859}
   - component: {fileID: 592524861}
   - component: {fileID: 592524860}
+  - component: {fileID: 592524863}
   m_Layer: 0
   m_Name: Ocean (28)
   m_TagString: Untagged
@@ -5154,6 +5243,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 592524858}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &592524863
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592524858}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!1001 &592746298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6978,6 +7088,7 @@ GameObject:
   - component: {fileID: 797684833}
   - component: {fileID: 797684835}
   - component: {fileID: 797684834}
+  - component: {fileID: 797684837}
   m_Layer: 0
   m_Name: Ocean (11)
   m_TagString: Untagged
@@ -7057,6 +7168,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797684832}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &797684837
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797684832}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!1001 &801831435
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7207,6 +7339,7 @@ GameObject:
   - component: {fileID: 812178597}
   - component: {fileID: 812178599}
   - component: {fileID: 812178598}
+  - component: {fileID: 812178601}
   m_Layer: 0
   m_Name: Ocean (30)
   m_TagString: Untagged
@@ -7286,6 +7419,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812178596}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &812178601
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812178596}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!1 &814257230
 GameObject:
   m_ObjectHideFlags: 0
@@ -7297,6 +7451,7 @@ GameObject:
   - component: {fileID: 814257231}
   - component: {fileID: 814257233}
   - component: {fileID: 814257232}
+  - component: {fileID: 814257235}
   m_Layer: 0
   m_Name: Ocean (10)
   m_TagString: Untagged
@@ -7376,6 +7531,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814257230}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &814257235
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814257230}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!1001 &816460863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8050,6 +8226,7 @@ GameObject:
   - component: {fileID: 882157305}
   - component: {fileID: 882157307}
   - component: {fileID: 882157306}
+  - component: {fileID: 882157309}
   m_Layer: 0
   m_Name: Ocean (26)
   m_TagString: Untagged
@@ -8129,6 +8306,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882157304}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &882157309
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882157304}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!1001 &894856662
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8767,6 +8965,7 @@ GameObject:
   - component: {fileID: 957682069}
   - component: {fileID: 957682071}
   - component: {fileID: 957682070}
+  - component: {fileID: 957682073}
   m_Layer: 0
   m_Name: Ocean (15)
   m_TagString: Untagged
@@ -8846,6 +9045,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 957682068}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &957682073
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957682068}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!1001 &964199083
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9224,6 +9444,7 @@ GameObject:
   - component: {fileID: 982529094}
   - component: {fileID: 982529096}
   - component: {fileID: 982529095}
+  - component: {fileID: 982529098}
   m_Layer: 0
   m_Name: Ocean (22)
   m_TagString: Untagged
@@ -9303,6 +9524,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 982529093}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &982529098
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982529093}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!4 &983257566 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1242528905608908957, guid: e898f64f4bb313b4093714a7f5141831, type: 3}
@@ -9633,6 +9875,7 @@ GameObject:
   - component: {fileID: 1067370770}
   - component: {fileID: 1067370772}
   - component: {fileID: 1067370771}
+  - component: {fileID: 1067370774}
   m_Layer: 0
   m_Name: Ocean (27)
   m_TagString: Untagged
@@ -9712,6 +9955,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1067370769}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &1067370774
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067370769}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!1001 &1068363710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9875,6 +10139,7 @@ GameObject:
   - component: {fileID: 1111856611}
   - component: {fileID: 1111856613}
   - component: {fileID: 1111856612}
+  - component: {fileID: 1111856615}
   m_Layer: 0
   m_Name: Ocean (25)
   m_TagString: Untagged
@@ -9954,6 +10219,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111856610}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &1111856615
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111856610}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!4 &1112528290 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3328418456275108962, guid: 04a77e7e43a79ed478e212e4f5ede12d, type: 3}
@@ -10878,6 +11164,7 @@ GameObject:
   - component: {fileID: 1225475121}
   - component: {fileID: 1225475123}
   - component: {fileID: 1225475122}
+  - component: {fileID: 1225475125}
   m_Layer: 0
   m_Name: Ocean (19)
   m_TagString: Untagged
@@ -10957,6 +11244,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225475120}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &1225475125
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225475120}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!4 &1245416143 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3328418456275108962, guid: 04a77e7e43a79ed478e212e4f5ede12d, type: 3}
@@ -10978,6 +11286,7 @@ GameObject:
   - component: {fileID: 1249112273}
   - component: {fileID: 1249112275}
   - component: {fileID: 1249112274}
+  - component: {fileID: 1249112277}
   m_Layer: 0
   m_Name: Ocean (14)
   m_TagString: Untagged
@@ -11057,6 +11366,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249112272}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &1249112277
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249112272}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!1001 &1260053865
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11341,6 +11671,7 @@ GameObject:
   - component: {fileID: 1289302471}
   - component: {fileID: 1289302473}
   - component: {fileID: 1289302472}
+  - component: {fileID: 1289302475}
   m_Layer: 0
   m_Name: Ocean (4)
   m_TagString: Untagged
@@ -11420,6 +11751,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1289302470}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &1289302475
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289302470}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!1001 &1289476225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11506,6 +11858,7 @@ GameObject:
   - component: {fileID: 1305204765}
   - component: {fileID: 1305204767}
   - component: {fileID: 1305204766}
+  - component: {fileID: 1305204769}
   m_Layer: 0
   m_Name: Ocean (16)
   m_TagString: Untagged
@@ -11585,6 +11938,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1305204764}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &1305204769
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305204764}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!1001 &1315604609
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11823,6 +12197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1347927133}
+  - component: {fileID: 1347927134}
   m_Layer: 0
   m_Name: Oceanos
   m_TagString: Untagged
@@ -11875,6 +12250,18 @@ Transform:
   - {fileID: 1591014734}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1347927134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347927132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cf374fe9554bcf42b04fb3c2f9f2b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OceanoSetup
 --- !u!1001 &1357169513
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11959,6 +12346,7 @@ GameObject:
   - component: {fileID: 1360702550}
   - component: {fileID: 1360702552}
   - component: {fileID: 1360702551}
+  - component: {fileID: 1360702554}
   m_Layer: 0
   m_Name: Ocean (29)
   m_TagString: Untagged
@@ -12038,6 +12426,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1360702549}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &1360702554
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360702549}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!1001 &1372637837
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12471,6 +12880,7 @@ GameObject:
   - component: {fileID: 1431086950}
   - component: {fileID: 1431086952}
   - component: {fileID: 1431086951}
+  - component: {fileID: 1431086954}
   m_Layer: 0
   m_Name: Ocean (21)
   m_TagString: Untagged
@@ -12550,6 +12960,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1431086949}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &1431086954
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431086949}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!1001 &1433166198
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12776,6 +13207,7 @@ GameObject:
   - component: {fileID: 1472278104}
   - component: {fileID: 1472278106}
   - component: {fileID: 1472278105}
+  - component: {fileID: 1472278108}
   m_Layer: 0
   m_Name: Ocean (8)
   m_TagString: Untagged
@@ -12855,6 +13287,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1472278103}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &1472278108
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472278103}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!4 &1473066004 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1788603879022669767, guid: bcdb601ee0e1144478b160e8530cefa2, type: 3}
@@ -13486,6 +13939,7 @@ GameObject:
   - component: {fileID: 1591014734}
   - component: {fileID: 1591014736}
   - component: {fileID: 1591014735}
+  - component: {fileID: 1591014738}
   m_Layer: 0
   m_Name: Ocean (2)
   m_TagString: Untagged
@@ -13565,6 +14019,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591014733}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &1591014738
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591014733}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!4 &1593609190 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1120940691151623889, guid: 4caec93c49ab5b34593a7cdc71d23e05, type: 3}
@@ -14658,6 +15133,7 @@ GameObject:
   - component: {fileID: 1805845314}
   - component: {fileID: 1805845316}
   - component: {fileID: 1805845315}
+  - component: {fileID: 1805845318}
   m_Layer: 0
   m_Name: Ocean (9)
   m_TagString: Untagged
@@ -14737,6 +15213,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805845313}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &1805845318
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805845313}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!4 &1813900735 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4892263782881683710, guid: a8aa1fcb3ef5b1843afd3311ea052a06, type: 3}
@@ -15046,6 +15543,7 @@ GameObject:
   - component: {fileID: 1846897416}
   - component: {fileID: 1846897418}
   - component: {fileID: 1846897417}
+  - component: {fileID: 1846897420}
   m_Layer: 0
   m_Name: Ocean (6)
   m_TagString: Untagged
@@ -15125,6 +15623,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1846897415}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &1846897420
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846897415}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!1001 &1847617859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16338,6 +16857,7 @@ GameObject:
   - component: {fileID: 2017144082}
   - component: {fileID: 2017144084}
   - component: {fileID: 2017144083}
+  - component: {fileID: 2017144086}
   m_Layer: 0
   m_Name: Ocean (3)
   m_TagString: Untagged
@@ -16417,6 +16937,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2017144081}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &2017144086
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017144081}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!4 &2018588548 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1097481449707835360, guid: 186a8d9264fb5ee4bb4b0b5a4af78407, type: 3}
@@ -16443,6 +16984,7 @@ GameObject:
   - component: {fileID: 2035069940}
   - component: {fileID: 2035069942}
   - component: {fileID: 2035069941}
+  - component: {fileID: 2035069944}
   m_Layer: 0
   m_Name: Ocean (18)
   m_TagString: Untagged
@@ -16522,6 +17064,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2035069939}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &2035069944
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035069939}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!4 &2037405978 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4801094834027345461, guid: 7e9a1ea230e000c418e11c3b421734e1, type: 3}
@@ -16657,6 +17220,7 @@ GameObject:
   - component: {fileID: 2051697773}
   - component: {fileID: 2051697775}
   - component: {fileID: 2051697774}
+  - component: {fileID: 2051697777}
   m_Layer: 0
   m_Name: Ocean (17)
   m_TagString: Untagged
@@ -16736,6 +17300,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051697772}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &2051697777
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051697772}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!1001 &2055552123
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16824,6 +17409,7 @@ GameObject:
   - component: {fileID: 2058036274}
   - component: {fileID: 2058036276}
   - component: {fileID: 2058036275}
+  - component: {fileID: 2058036278}
   m_Layer: 0
   m_Name: Ocean (12)
   m_TagString: Untagged
@@ -16903,6 +17489,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2058036273}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &2058036278
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058036273}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!4 &2058846898 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2316432612491707516, guid: 0598a034c1b3d474e97ba38920f3ecc6, type: 3}
@@ -17058,6 +17665,7 @@ GameObject:
   - component: {fileID: 2085390509}
   - component: {fileID: 2085390511}
   - component: {fileID: 2085390510}
+  - component: {fileID: 2085390513}
   m_Layer: 0
   m_Name: Ocean (23)
   m_TagString: Untagged
@@ -17137,6 +17745,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2085390508}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &2085390513
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085390508}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!1001 &2095148286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17315,6 +17944,7 @@ GameObject:
   - component: {fileID: 2106271547}
   - component: {fileID: 2106271549}
   - component: {fileID: 2106271548}
+  - component: {fileID: 2106271551}
   m_Layer: 0
   m_Name: Ocean (20)
   m_TagString: Untagged
@@ -17394,6 +18024,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2106271546}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &2106271551
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106271546}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!4 &2110281943 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 703502755234783963, guid: cb219fb371521054188c0bae8153e9cd, type: 3}
@@ -17742,6 +18393,7 @@ GameObject:
   - component: {fileID: 2140681699}
   - component: {fileID: 2140681701}
   - component: {fileID: 2140681700}
+  - component: {fileID: 2140681703}
   m_Layer: 0
   m_Name: Ocean (24)
   m_TagString: Untagged
@@ -17821,6 +18473,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2140681698}
   m_Mesh: {fileID: 6555138371428779536, guid: f184ba4911fbaaa4195a4f967a69e3bf, type: 3}
+--- !u!65 &2140681703
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140681698}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 155.9589, y: 1.785138, z: 155.9589}
+  m_Center: {x: 0.0000038146973, y: 0.892569, z: 0.0000038146973}
 --- !u!1001 &2143309976
 PrefabInstance:
   m_ObjectHideFlags: 0
