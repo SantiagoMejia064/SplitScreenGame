@@ -117,9 +117,13 @@ GameObject:
   - component: {fileID: 2316432612491707516}
   - component: {fileID: 1977370628844487245}
   - component: {fileID: 2997936898113133483}
+  - component: {fileID: 6942243089308893649}
+  - component: {fileID: 2051701086455466354}
+  - component: {fileID: 8244053429069823654}
+  - component: {fileID: 3107031334864988222}
   m_Layer: 0
   m_Name: Props_12
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,7 +136,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8118714852897901293}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -202,3 +206,90 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6942243089308893649
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8118714852897901293}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.3284214, y: 0.2, z: 2.0131621}
+  m_Center: {x: 0, y: 0, z: 1.6788299}
+--- !u!65 &2051701086455466354
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8118714852897901293}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.3284214, y: 0.2, z: 2.0131621}
+  m_Center: {x: 0, y: 0, z: -1.67883}
+--- !u!114 &8244053429069823654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8118714852897901293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16023855aea14a52a1d903eb34d9392f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SubeYBaja
+  puntoPivote: {fileID: 2316432612491707516}
+  ejeRotacionLocal: {x: 1, y: 0, z: 0}
+  ejeLadoLocal: {x: 1, y: 0, z: 0}
+  invertirDireccion: 0
+  anguloMaximo: 90
+  sensibilidadPeso: 50
+  velocidadRotacion: 70
+  velocidadRetorno: 35
+  usarMasaDelRigidbody: 1
+  tagJugador: Player
+  soloContactoSuperior: 0
+  tiempoParaOlvidarContacto: 0.5
+--- !u!65 &3107031334864988222
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8118714852897901293}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.3284214, y: 0.2, z: 0.73}
+  m_Center: {x: 0, y: 0, z: 0}

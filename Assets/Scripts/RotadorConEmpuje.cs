@@ -17,6 +17,11 @@ public class RotadorConEmpuje : MonoBehaviour
     [SerializeField] private float velocidadGradosPorSegundo = 90f;
     [SerializeField] private bool rotarAlrededorDelPunto = true;
 
+    [Header("Swing")]
+    [SerializeField] private bool usarSwing = false;
+    [SerializeField] private float anguloMinimoSwing = -25f;
+    [SerializeField] private float anguloMaximoSwing = 25f;
+
     [Header("Comportamiento")]
     [SerializeField] private string tagJugador = "Player";
     [SerializeField] private bool usarEmpuje = true;
@@ -44,12 +49,20 @@ public class RotadorConEmpuje : MonoBehaviour
     private readonly Dictionary<GameObject, float> ultimoRespawnPorJugador = new Dictionary<GameObject, float>();
     private const float intervaloEntreRespawns = 0.25f;
 
+    private Vector3 posicionInicial;
+    private Quaternion rotacionInicial;
     private Vector3 posicionInicialModelo;
     private Coroutine rutinaResorte;
     private float ultimoInicioResorte;
+    private float tiempoSwing;
+    private float ultimoAnguloSwing;
+    private float signoMovimientoRotacion = 1f;
 
     private void Awake()
     {
+        posicionInicial = transform.position;
+        rotacionInicial = transform.rotation;
+
         if (modeloResorte != null)
         {
             posicionInicialModelo = modeloResorte.localPosition;
@@ -65,7 +78,18 @@ public class RotadorConEmpuje : MonoBehaviour
     private void FixedUpdate()
     {
         Vector3 axis = ejeRotacion.sqrMagnitude > 0.001f ? ejeRotacion.normalized : Vector3.up;
+
+        if (usarSwing)
+        {
+            AplicarSwing(axis);
+            return;
+        }
+
         float degrees = velocidadGradosPorSegundo * Time.fixedDeltaTime;
+        if (Mathf.Abs(degrees) > 0.001f)
+        {
+            signoMovimientoRotacion = Mathf.Sign(degrees);
+        }
 
         if (puntoRotacion != null && rotarAlrededorDelPunto)
         {
@@ -74,6 +98,42 @@ public class RotadorConEmpuje : MonoBehaviour
         }
 
         transform.Rotate(axis, degrees, Space.Self);
+    }
+
+    private void AplicarSwing(Vector3 axis)
+    {
+        float minimo = Mathf.Min(anguloMinimoSwing, anguloMaximoSwing);
+        float maximo = Mathf.Max(anguloMinimoSwing, anguloMaximoSwing);
+        float centro = (minimo + maximo) * 0.5f;
+        float amplitud = (maximo - minimo) * 0.5f;
+
+        if (amplitud <= 0.001f)
+        {
+            return;
+        }
+
+        tiempoSwing += Time.fixedDeltaTime;
+        float velocidad = Mathf.Abs(velocidadGradosPorSegundo);
+        float frecuencia = velocidad > 0.001f ? velocidad / amplitud : 0f;
+        float angulo = centro + Mathf.Sin(tiempoSwing * frecuencia) * amplitud;
+        float deltaAngulo = angulo - ultimoAnguloSwing;
+
+        if (Mathf.Abs(deltaAngulo) > 0.001f)
+        {
+            signoMovimientoRotacion = Mathf.Sign(deltaAngulo);
+        }
+
+        ultimoAnguloSwing = angulo;
+
+        if (puntoRotacion != null && rotarAlrededorDelPunto)
+        {
+            Quaternion rotacionSwing = Quaternion.AngleAxis(angulo, axis);
+            Vector3 offsetInicial = posicionInicial - puntoRotacion.position;
+            transform.SetPositionAndRotation(puntoRotacion.position + rotacionSwing * offsetInicial, rotacionSwing * rotacionInicial);
+            return;
+        }
+
+        transform.SetPositionAndRotation(posicionInicial, rotacionInicial * Quaternion.AngleAxis(angulo, axis));
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -253,7 +313,7 @@ public class RotadorConEmpuje : MonoBehaviour
         if (collision.contactCount > 0)
         {
             Vector3 radio = collision.GetContact(0).point - center;
-            Vector3 tangente = Vector3.Cross(axis, radio).normalized * Mathf.Sign(velocidadGradosPorSegundo);
+            Vector3 tangente = Vector3.Cross(axis, radio).normalized * signoMovimientoRotacion;
 
             if (tangente.sqrMagnitude > 0.001f)
             {

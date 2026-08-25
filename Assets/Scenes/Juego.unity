@@ -2137,10 +2137,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8122050685830729847, guid: 04a77e7e43a79ed478e212e4f5ede12d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1087142361}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04a77e7e43a79ed478e212e4f5ede12d, type: 3}
 --- !u!1001 &221670412
 PrefabInstance:
@@ -2784,11 +2781,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1788603879022669767, guid: bcdb601ee0e1144478b160e8530cefa2, type: 3}
   m_PrefabInstance: {fileID: 1803672779}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &288861512 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5003257899507768075, guid: de3df4a73a200dd4aab4b967d8702018, type: 3}
-  m_PrefabInstance: {fileID: 909465425}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &290965089
 GameObject:
   m_ObjectHideFlags: 0
@@ -3236,22 +3228,6 @@ PrefabInstance:
     - target: {fileID: 5428785273902133245, guid: 524443b7797344d49a3a83c3cf3e0a60, type: 3}
       propertyPath: m_Name
       value: Props_10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5428785273902133245, guid: 524443b7797344d49a3a83c3cf3e0a60, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
-    - target: {fileID: 9154870057917676570, guid: 524443b7797344d49a3a83c3cf3e0a60, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.2695191
-      objectReference: {fileID: 0}
-    - target: {fileID: 9154870057917676570, guid: 524443b7797344d49a3a83c3cf3e0a60, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.269519
-      objectReference: {fileID: 0}
-    - target: {fileID: 9154870057917676570, guid: 524443b7797344d49a3a83c3cf3e0a60, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.269519
       objectReference: {fileID: 0}
     - target: {fileID: 9154870057917676570, guid: 524443b7797344d49a3a83c3cf3e0a60, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13768,10 +13744,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8122050685830729847, guid: 04a77e7e43a79ed478e212e4f5ede12d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2097759562}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04a77e7e43a79ed478e212e4f5ede12d, type: 3}
 --- !u!4 &412149241 stripped
 Transform:
@@ -15943,6 +15916,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 937297890}
     m_Modifications:
+    - target: {fileID: 537508109525410304, guid: 524443b7797344d49a3a83c3cf3e0a60, type: 3}
+      propertyPath: tiempoAntesDeCaer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5428785273902133245, guid: 524443b7797344d49a3a83c3cf3e0a60, type: 3}
       propertyPath: m_Name
       value: Props_10 (2)
@@ -16557,6 +16534,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 937297890}
     m_Modifications:
+    - target: {fileID: 2962050065753424777, guid: de3df4a73a200dd4aab4b967d8702018, type: 3}
+      propertyPath: anguloMaximoSwing
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2962050065753424777, guid: de3df4a73a200dd4aab4b967d8702018, type: 3}
+      propertyPath: anguloMinimoSwing
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2962050065753424777, guid: de3df4a73a200dd4aab4b967d8702018, type: 3}
+      propertyPath: velocidadGradosPorSegundo
+      value: 55
+      objectReference: {fileID: 0}
     - target: {fileID: 5003257899507768075, guid: de3df4a73a200dd4aab4b967d8702018, type: 3}
       propertyPath: m_Name
       value: Props_7 (3)
@@ -17451,49 +17440,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 941644813231066131, guid: f9028a1015685ce4795e21831f327fb9, type: 3}
   m_PrefabInstance: {fileID: 1990315193}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &739475136 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8122050685830729847, guid: 04a77e7e43a79ed478e212e4f5ede12d, type: 3}
-  m_PrefabInstance: {fileID: 1117225651}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &739475137 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5847300028950260507, guid: 04a77e7e43a79ed478e212e4f5ede12d, type: 3}
-  m_PrefabInstance: {fileID: 1117225651}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &739475141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 739475136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39c3d5c290f59ad449f4d50dfd10d52c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RotadorConEmpuje
-  puntoRotacion: {fileID: 0}
-  ejeRotacion: {x: 0, y: 0, z: 0}
-  velocidadGradosPorSegundo: 0
-  rotarAlrededorDelPunto: 0
-  tagJugador: Player
-  usarEmpuje: 1
-  respawnearJugador: 0
-  direccionEmpuje: 1
-  fuerzaEmpuje: 12
-  fuerzaVertical: 1.5
-  intervaloEntreEmpujes: 0.15
-  modoEmpuje: 1
-  usarAnimacionResorte: 1
-  modeloResorte: {fileID: 739475137}
-  animarSoloSiCaeEncima: 0
-  alturaHundimiento: 1
-  alturaRebote: 0.15
-  duracionHundimiento: 0.08
-  duracionRebote: 0.12
-  duracionRetorno: 0.14
-  intervaloEntreAnimaciones: 0.2
 --- !u!1 &744366897
 GameObject:
   m_ObjectHideFlags: 0
@@ -23724,13 +23670,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 937297890}
     m_Modifications:
+    - target: {fileID: 2962050065753424777, guid: de3df4a73a200dd4aab4b967d8702018, type: 3}
+      propertyPath: puntoRotacion
+      value: 
+      objectReference: {fileID: 75818216}
     - target: {fileID: 5003257899507768075, guid: de3df4a73a200dd4aab4b967d8702018, type: 3}
       propertyPath: m_Name
       value: Props_7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003257899507768075, guid: de3df4a73a200dd4aab4b967d8702018, type: 3}
-      propertyPath: m_TagString
-      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6768743221385502464, guid: de3df4a73a200dd4aab4b967d8702018, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23775,10 +23721,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5003257899507768075, guid: de3df4a73a200dd4aab4b967d8702018, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1630900526}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de3df4a73a200dd4aab4b967d8702018, type: 3}
 --- !u!4 &909558722 stripped
 Transform:
@@ -25520,49 +25463,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cfd87436f82f694cb1ed07e801a4415, type: 3}
---- !u!1 &1087142356 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8122050685830729847, guid: 04a77e7e43a79ed478e212e4f5ede12d, type: 3}
-  m_PrefabInstance: {fileID: 213026603}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1087142357 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5847300028950260507, guid: 04a77e7e43a79ed478e212e4f5ede12d, type: 3}
-  m_PrefabInstance: {fileID: 213026603}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1087142361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1087142356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39c3d5c290f59ad449f4d50dfd10d52c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RotadorConEmpuje
-  puntoRotacion: {fileID: 0}
-  ejeRotacion: {x: 0, y: 0, z: 0}
-  velocidadGradosPorSegundo: 0
-  rotarAlrededorDelPunto: 0
-  tagJugador: Player
-  usarEmpuje: 1
-  respawnearJugador: 0
-  direccionEmpuje: 1
-  fuerzaEmpuje: 8
-  fuerzaVertical: 1
-  intervaloEntreEmpujes: 0.15
-  modoEmpuje: 1
-  usarAnimacionResorte: 1
-  modeloResorte: {fileID: 1087142357}
-  animarSoloSiCaeEncima: 0
-  alturaHundimiento: 1
-  alturaRebote: 0.15
-  duracionHundimiento: 0.08
-  duracionRebote: 0.12
-  duracionRetorno: 0.14
-  intervaloEntreAnimaciones: 0.2
 --- !u!4 &1091168479 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 941644813231066131, guid: f9028a1015685ce4795e21831f327fb9, type: 3}
@@ -25888,19 +25788,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8685339473854879855, guid: 04a77e7e43a79ed478e212e4f5ede12d, type: 3}
       propertyPath: fuerzaEmpuje
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8685339473854879855, guid: 04a77e7e43a79ed478e212e4f5ede12d, type: 3}
       propertyPath: fuerzaVertical
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8122050685830729847, guid: 04a77e7e43a79ed478e212e4f5ede12d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 739475141}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04a77e7e43a79ed478e212e4f5ede12d, type: 3}
 --- !u!1 &1117621385
 GameObject:
@@ -28631,10 +28528,6 @@ PrefabInstance:
     - target: {fileID: 8118714852897901293, guid: 0598a034c1b3d474e97ba38920f3ecc6, type: 3}
       propertyPath: m_Name
       value: Props_12
-      objectReference: {fileID: 0}
-    - target: {fileID: 8118714852897901293, guid: 0598a034c1b3d474e97ba38920f3ecc6, type: 3}
-      propertyPath: m_TagString
-      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -33826,6 +33719,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 937297890}
     m_Modifications:
+    - target: {fileID: 537508109525410304, guid: 524443b7797344d49a3a83c3cf3e0a60, type: 3}
+      propertyPath: tiempoAntesDeCaer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5428785273902133245, guid: 524443b7797344d49a3a83c3cf3e0a60, type: 3}
       propertyPath: m_Name
       value: Props_10 (1)
@@ -34958,39 +34855,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6768743221385502464, guid: de3df4a73a200dd4aab4b967d8702018, type: 3}
   m_PrefabInstance: {fileID: 909465425}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1630900526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 288861512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39c3d5c290f59ad449f4d50dfd10d52c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RotadorConEmpuje
-  puntoRotacion: {fileID: 75818216}
-  ejeRotacion: {x: 0, y: 0, z: 1}
-  velocidadGradosPorSegundo: 25
-  rotarAlrededorDelPunto: 0
-  tagJugador: Player
-  usarEmpuje: 1
-  respawnearJugador: 1
-  direccionEmpuje: 0
-  fuerzaEmpuje: 12
-  fuerzaVertical: 1.5
-  intervaloEntreEmpujes: 0.15
-  modoEmpuje: 1
-  usarAnimacionResorte: 0
-  modeloResorte: {fileID: 0}
-  animarSoloSiCaeEncima: 1
-  alturaHundimiento: 0
-  alturaRebote: 0
-  duracionHundimiento: 0
-  duracionRebote: 0
-  duracionRetorno: 0
-  intervaloEntreAnimaciones: 0
 --- !u!1 &1646132529
 GameObject:
   m_ObjectHideFlags: 0
@@ -35804,6 +35668,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 937297890}
     m_Modifications:
+    - target: {fileID: 2962050065753424777, guid: de3df4a73a200dd4aab4b967d8702018, type: 3}
+      propertyPath: anguloMaximoSwing
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2962050065753424777, guid: de3df4a73a200dd4aab4b967d8702018, type: 3}
+      propertyPath: anguloMinimoSwing
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2962050065753424777, guid: de3df4a73a200dd4aab4b967d8702018, type: 3}
+      propertyPath: velocidadGradosPorSegundo
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 5003257899507768075, guid: de3df4a73a200dd4aab4b967d8702018, type: 3}
       propertyPath: m_Name
       value: Props_7 (2)
@@ -41736,6 +41612,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 937297890}
     m_Modifications:
+    - target: {fileID: 2962050065753424777, guid: de3df4a73a200dd4aab4b967d8702018, type: 3}
+      propertyPath: anguloMaximoSwing
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2962050065753424777, guid: de3df4a73a200dd4aab4b967d8702018, type: 3}
+      propertyPath: anguloMinimoSwing
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2962050065753424777, guid: de3df4a73a200dd4aab4b967d8702018, type: 3}
+      propertyPath: velocidadGradosPorSegundo
+      value: 55
+      objectReference: {fileID: 0}
     - target: {fileID: 5003257899507768075, guid: de3df4a73a200dd4aab4b967d8702018, type: 3}
       propertyPath: m_Name
       value: Props_7 (1)
@@ -42232,22 +42120,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Props_11
       objectReference: {fileID: 0}
-    - target: {fileID: 7195035819186706, guid: 2cfd87436f82f694cb1ed07e801a4415, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
-    - target: {fileID: 5411270384614237885, guid: 2cfd87436f82f694cb1ed07e801a4415, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.2033
-      objectReference: {fileID: 0}
-    - target: {fileID: 5411270384614237885, guid: 2cfd87436f82f694cb1ed07e801a4415, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.2033
-      objectReference: {fileID: 0}
-    - target: {fileID: 5411270384614237885, guid: 2cfd87436f82f694cb1ed07e801a4415, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.2033
-      objectReference: {fileID: 0}
     - target: {fileID: 5411270384614237885, guid: 2cfd87436f82f694cb1ed07e801a4415, type: 3}
       propertyPath: m_LocalPosition.x
       value: -41.98
@@ -42482,22 +42354,6 @@ PrefabInstance:
     - target: {fileID: 7195035819186706, guid: 2cfd87436f82f694cb1ed07e801a4415, type: 3}
       propertyPath: m_Name
       value: Props_11 (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7195035819186706, guid: 2cfd87436f82f694cb1ed07e801a4415, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
-    - target: {fileID: 5411270384614237885, guid: 2cfd87436f82f694cb1ed07e801a4415, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.2033
-      objectReference: {fileID: 0}
-    - target: {fileID: 5411270384614237885, guid: 2cfd87436f82f694cb1ed07e801a4415, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.2033
-      objectReference: {fileID: 0}
-    - target: {fileID: 5411270384614237885, guid: 2cfd87436f82f694cb1ed07e801a4415, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.2033
       objectReference: {fileID: 0}
     - target: {fileID: 5411270384614237885, guid: 2cfd87436f82f694cb1ed07e801a4415, type: 3}
       propertyPath: m_LocalPosition.x
@@ -44120,49 +43976,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcdb601ee0e1144478b160e8530cefa2, type: 3}
---- !u!1 &2097759557 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8122050685830729847, guid: 04a77e7e43a79ed478e212e4f5ede12d, type: 3}
-  m_PrefabInstance: {fileID: 391804195}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2097759558 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5847300028950260507, guid: 04a77e7e43a79ed478e212e4f5ede12d, type: 3}
-  m_PrefabInstance: {fileID: 391804195}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2097759562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2097759557}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39c3d5c290f59ad449f4d50dfd10d52c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RotadorConEmpuje
-  puntoRotacion: {fileID: 0}
-  ejeRotacion: {x: 0, y: 0, z: 0}
-  velocidadGradosPorSegundo: 0
-  rotarAlrededorDelPunto: 0
-  tagJugador: Player
-  usarEmpuje: 1
-  respawnearJugador: 0
-  direccionEmpuje: 1
-  fuerzaEmpuje: 8
-  fuerzaVertical: 1
-  intervaloEntreEmpujes: 0.15
-  modoEmpuje: 1
-  usarAnimacionResorte: 1
-  modeloResorte: {fileID: 2097759558}
-  animarSoloSiCaeEncima: 0
-  alturaHundimiento: 1
-  alturaRebote: 0.15
-  duracionHundimiento: 0.08
-  duracionRebote: 0.12
-  duracionRetorno: 0.14
-  intervaloEntreAnimaciones: 0.2
 --- !u!4 &2100622890 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1242528905608908957, guid: e898f64f4bb313b4093714a7f5141831, type: 3}

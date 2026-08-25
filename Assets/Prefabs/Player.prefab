@@ -132,13 +132,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f169f3ced5909aa4c9280f48c42e8c0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Movimiento
-  speed: 5
-  aceleracion: 32
-  desaceleracion: 6
+  speed: 6
+  aceleracion: 24
+  desaceleracion: 4
   velocidadGiro: 9
   controlEnAire: 0.45
-  fuerzaSalto: 5
-  gravedadExtra: 18
+  fuerzaSalto: 6
+  gravedadExtra: 10
   fuerzaEmpuje: 12
   rangoAgarre: 1.35
   radioAgarre: 0.6

@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 2477959365151072144}
   - component: {fileID: 8854827397824150244}
   - component: {fileID: 3798978282071232687}
+  - component: {fileID: 2991101143745783612}
+  - component: {fileID: 2522932062538895450}
   m_Layer: 0
   m_Name: Props_10a
   m_TagString: Untagged
@@ -116,6 +118,47 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.987726, y: 1.9877264, z: 1.7208388}
   m_Center: {x: 0.0020037591, y: -0.0030055947, z: -0.36602965}
+--- !u!54 &2991101143745783612
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5393459245724866854}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &2522932062538895450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5393459245724866854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dce965047e4416588969e3f425d66dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PinchoRespawn
+  tagJugador: Player
+  intervaloEntreRespawns: 0.25
 --- !u!1 &5428785273902133245
 GameObject:
   m_ObjectHideFlags: 0
@@ -128,9 +171,10 @@ GameObject:
   - component: {fileID: 6259260531206575542}
   - component: {fileID: 4561932985464768040}
   - component: {fileID: 4619346963193381253}
+  - component: {fileID: 537508109525410304}
   m_Layer: 0
   m_Name: Props_10
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,9 +187,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5428785273902133245}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2695191, y: 1.269519, z: 1.269519}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6975670680373123124}
@@ -231,3 +275,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.987726, y: 1.9877264, z: 1.190655}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &537508109525410304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5428785273902133245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba14de384c684957972c869be2eea6e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TrampaPinchosCaen
+  pinchos:
+  - {fileID: 2991101143745783612}
+  buscarPinchosEnHijos: 1
+  mantenerSuspendidosAlInicio: 1
+  velocidadInicialCaida: {x: 0, y: 0.5, z: 0}
+  tiempoAntesDeCaer: 0
+  reiniciarAutomaticamente: 1
+  tiempoAntesDeReiniciar: 3
+  activarUnaSolaVez: 0
+  tagJugador: Player
+  mostrarLogs: 1

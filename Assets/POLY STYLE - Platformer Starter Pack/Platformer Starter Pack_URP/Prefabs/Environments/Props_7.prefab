@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 2021245808634072236}
   - component: {fileID: 5673348229918235069}
   - component: {fileID: 7607059335269597301}
+  - component: {fileID: 2962050065753424777}
   m_Layer: 0
   m_Name: Props_7
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5003257899507768075}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -117,3 +118,39 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.003325, y: 1.2563467, z: 1.3290837}
   m_Center: {x: 0.0016624928, y: -3.2748008, z: 0.24736997}
+--- !u!114 &2962050065753424777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5003257899507768075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39c3d5c290f59ad449f4d50dfd10d52c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotadorConEmpuje
+  puntoRotacion: {fileID: 0}
+  ejeRotacion: {x: 0, y: 0, z: 1}
+  velocidadGradosPorSegundo: 60
+  rotarAlrededorDelPunto: 0
+  usarSwing: 1
+  anguloMinimoSwing: -50
+  anguloMaximoSwing: 50
+  tagJugador: Player
+  usarEmpuje: 1
+  respawnearJugador: 0
+  direccionEmpuje: 0
+  fuerzaEmpuje: 12
+  fuerzaVertical: 1.5
+  intervaloEntreEmpujes: 0.15
+  modoEmpuje: 1
+  usarAnimacionResorte: 0
+  modeloResorte: {fileID: 0}
+  animarSoloSiCaeEncima: 1
+  alturaHundimiento: 0
+  alturaRebote: 0
+  duracionHundimiento: 0
+  duracionRebote: 0
+  duracionRetorno: 0
+  intervaloEntreAnimaciones: 0
