@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4917926439890970647}
   m_Layer: 0
   m_Name: Props_4
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,9 +27,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4074813984219522512}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.47851, y: 0.47850996, z: 0.47850996}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5847300028950260507}
@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: 5907741347030846902}
   - component: {fileID: 2904593087290849882}
   - component: {fileID: 5815195565804045203}
+  - component: {fileID: 8685339473854879855}
   m_Layer: 0
   m_Name: Props_4a
   m_TagString: Untagged
@@ -231,3 +232,36 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.8908615, y: 2.4513595, z: 2.8908615}
   m_Center: {x: 1.4028438e-10, y: 1.2050338, z: 0.0000019079098}
+--- !u!114 &8685339473854879855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8122050685830729847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39c3d5c290f59ad449f4d50dfd10d52c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotadorConEmpuje
+  puntoRotacion: {fileID: 0}
+  ejeRotacion: {x: 0, y: 0, z: 0}
+  velocidadGradosPorSegundo: 0
+  rotarAlrededorDelPunto: 0
+  tagJugador: Player
+  usarEmpuje: 1
+  respawnearJugador: 0
+  direccionEmpuje: 1
+  fuerzaEmpuje: 8
+  fuerzaVertical: 1
+  intervaloEntreEmpujes: 0.15
+  modoEmpuje: 1
+  usarAnimacionResorte: 1
+  modeloResorte: {fileID: 5847300028950260507}
+  animarSoloSiCaeEncima: 0
+  alturaHundimiento: 1
+  alturaRebote: 0.15
+  duracionHundimiento: 0.08
+  duracionRebote: 0.12
+  duracionRetorno: 0.14
+  intervaloEntreAnimaciones: 0.2

@@ -110,9 +110,15 @@ public class Movimiento : MonoBehaviour
         }
     }
 
-    private void Update()
+
+    private void OnGrab(InputValue input)
     {
-        UpdateGrabInput();
+        grabInput = input.isPressed;
+
+        if (!grabInput)
+        {
+            rigidbodyAgarrado = null;
+        }
     }
 
     private void FixedUpdate()
@@ -235,23 +241,6 @@ public class Movimiento : MonoBehaviour
         }
     }
 
-    private void UpdateGrabInput()
-    {
-        if (!carreraIniciada || Meta.juegoTerminado)
-        {
-            grabInput = false;
-            return;
-        }
-
-        if (IsGamepadPlayer())
-        {
-            Gamepad gamepad = playerInput.devices.FirstOrDefault(device => device is Gamepad) as Gamepad;
-            grabInput = gamepad != null && gamepad.rightShoulder.isPressed;
-            return;
-        }
-
-        grabInput = Keyboard.current != null && Keyboard.current.eKey.isPressed;
-    }
 
     private void StopRigidbody()
     {

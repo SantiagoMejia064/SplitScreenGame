@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 941644813231066131}
   - component: {fileID: 7351379104709758077}
   - component: {fileID: 3183241587988221037}
+  - component: {fileID: 1632680332926264518}
   m_Layer: 0
   m_Name: Ground_H
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685864440775332888}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -96,6 +97,27 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1632680332926264518
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685864440775332888}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6.4799995, y: 9.806505, z: 6.4799995}
+  m_Center: {x: 2.5, y: -4.8692694, z: -2.5}
 --- !u!1 &7705026239028872677
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,6 +128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4072505128677086337}
   - component: {fileID: 3504821014309866982}
+  - component: {fileID: 8903459473730577864}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -143,9 +166,26 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 6.4928093, y: 0.5468378, z: 6.4599695}
   m_Center: {x: -0.08005333, y: -0.2265811, z: 0.035371304}
+--- !u!114 &8903459473730577864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7705026239028872677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3423e6b25b1945419f4d5bb530455a5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PuntoRespawn
+  puntoRespawn: {fileID: 4072505128677086337}
+  tagJugador: Player
+  soloSiAvanza: 1
+  indiceProgreso: 0
+  mostrarLogs: 1
