@@ -50,6 +50,12 @@ public class RaceTimer : MonoBehaviour
             return;
         }
 
+        if (Meta.juegoTerminado)
+        {
+            timerRunning = false;
+            return;
+        }
+
         elapsedTime += Time.deltaTime;
         UpdateTimerText();
     }
