@@ -132,8 +132,11 @@ MonoBehaviour:
   ejeRotacion: {x: 0, y: 1, z: 0}
   velocidadGradosPorSegundo: -90
   rotarAlrededorDelPunto: 1
+  usarSwing: 0
+  anguloMinimoSwing: -25
+  anguloMaximoSwing: 25
   tagJugador: Player
-  usarEmpuje: 1
+  usarEmpuje: 0
   respawnearJugador: 1
   direccionEmpuje: 0
   fuerzaEmpuje: 12
