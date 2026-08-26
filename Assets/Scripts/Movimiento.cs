@@ -24,7 +24,6 @@ public class Movimiento : MonoBehaviour
     [SerializeField] private float gravedadExtra = 18f;
     [SerializeField] private float fuerzaEmpuje = 12f;
     [SerializeField] private float rangoAgarre = 1.35f;
-    [SerializeField] private float radioAgarre = 0.6f;
     [SerializeField] private float fuerzaAgarre = 22f;
     [SerializeField, Range(0.1f, 1f)] private float multiplicadorVelocidadAgarrando = 0.65f;
     [SerializeField] private Transform referenciaMovimiento;
@@ -34,6 +33,7 @@ public class Movimiento : MonoBehaviour
     private Rigidbody rb;
     private Rigidbody rigidbodyAgarrado;
     private PlayerInput playerInput;
+    private InputAction grabAction;
     private float readyInputDelay;
     private int groundContacts = 0;
     private bool grabInput;
@@ -52,6 +52,7 @@ public class Movimiento : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         playerInput = GetComponent<PlayerInput>();
+        grabAction = playerInput.actions["Player/Grab"];
         readyInputDelay = Time.time + 0.25f;
         ConfigureRigidbodyRotation();
         rb.interpolation = RigidbodyInterpolation.Interpolate;
@@ -110,17 +111,6 @@ public class Movimiento : MonoBehaviour
         }
     }
 
-
-    private void OnGrab(InputValue input)
-    {
-        grabInput = input.isPressed;
-
-        if (!grabInput)
-        {
-            rigidbodyAgarrado = null;
-        }
-    }
-
     private void FixedUpdate()
     {
         if (!carreraIniciada || Meta.juegoTerminado)
@@ -128,6 +118,8 @@ public class Movimiento : MonoBehaviour
             StopRigidbody();
             return;
         }
+
+        grabInput = grabAction != null && grabAction.IsPressed();
 
         ApplyHeavyMovement();
         ApplyExtraGravity();
@@ -161,19 +153,6 @@ public class Movimiento : MonoBehaviour
         Quaternion targetRotation = Quaternion.LookRotation(inputDirection, Vector3.up);
         Quaternion nextRotation = Quaternion.Slerp(rb.rotation, targetRotation, velocidadGiro * Time.fixedDeltaTime);
         rb.MoveRotation(nextRotation);
-    }
-
-    private Vector3 GetGrabForward()
-    {
-        if (referenciaMovimiento == null)
-        {
-            return transform.forward;
-        }
-
-        Vector3 forward = referenciaMovimiento.forward;
-        forward.y = 0f;
-
-        return forward.sqrMagnitude > 0.001f ? forward.normalized : transform.forward;
     }
 
     private void ConfigureRigidbodyRotation()
@@ -214,9 +193,7 @@ public class Movimiento : MonoBehaviour
             return;
         }
 
-        Vector3 grabForward = GetGrabForward();
-        Vector3 grabPoint = rb.position + grabForward * rangoAgarre;
-        Vector3 pullDirection = grabPoint - rigidbodyAgarrado.position;
+        Vector3 pullDirection = rb.position - rigidbodyAgarrado.position;
         pullDirection.y = 0f;
 
         rigidbodyAgarrado.AddForce(pullDirection * fuerzaAgarre, ForceMode.Acceleration);
@@ -225,8 +202,8 @@ public class Movimiento : MonoBehaviour
 
     private void TryGrabPlayer()
     {
-        Vector3 grabCenter = rb.position + Vector3.up * 0.8f + GetGrabForward() * rangoAgarre;
-        Collider[] hits = Physics.OverlapSphere(grabCenter, radioAgarre, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore);
+        Vector3 grabCenter = rb.position + Vector3.up * 0.8f;
+        Collider[] hits = Physics.OverlapSphere(grabCenter, rangoAgarre, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore);
 
         foreach (Collider hit in hits)
         {
@@ -240,7 +217,6 @@ public class Movimiento : MonoBehaviour
             return;
         }
     }
-
 
     private void StopRigidbody()
     {

@@ -2867,7 +2867,6 @@ MonoBehaviour:
   gravedadExtra: 18
   fuerzaEmpuje: 12
   rangoAgarre: 1.35
-  radioAgarre: 0.6
   fuerzaAgarre: 22
   multiplicadorVelocidadAgarrando: 0.65
   referenciaMovimiento: {fileID: 0}
@@ -25577,7 +25576,6 @@ MonoBehaviour:
   gravedadExtra: 18
   fuerzaEmpuje: 12
   rangoAgarre: 1.35
-  radioAgarre: 0.6
   fuerzaAgarre: 22
   multiplicadorVelocidadAgarrando: 0.65
   referenciaMovimiento: {fileID: 0}
@@ -27295,7 +27293,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1347930428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36396,6 +36394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6e4e0e1058cf0f4684aeae537148872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Meta
+  textoGanador: {fileID: 518665375}
 --- !u!65 &1812089838
 BoxCollider:
   m_ObjectHideFlags: 0
