@@ -127,6 +127,42 @@ public partial class @NIS: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pistol"",
+                    ""type"": ""Button"",
+                    ""id"": ""b253706b-5e6d-4b72-8c81-7f3015a06043"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Shotgun"",
+                    ""type"": ""Button"",
+                    ""id"": ""71fefc4d-2ec3-444d-ac4a-602add147273"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""RocketLauncher"",
+                    ""type"": ""Button"",
+                    ""id"": ""0dba8b93-cba2-43f6-90ee-3f1b99f14b45"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Fire"",
+                    ""type"": ""Button"",
+                    ""id"": ""8baec5c9-aacc-43df-bc54-06e23c1aa505"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -261,6 +297,50 @@ public partial class @NIS: IInputActionCollection2, IDisposable
                     ""action"": ""Grab"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ec32cd07-7e1c-4d6f-85d8-958a2bea78bd"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pistol"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2fae0f02-631a-4d20-821a-0bd1419efdc7"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shotgun"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ae73da3f-e0fb-447b-9a8b-97638907955d"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RocketLauncher"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fe2c304a-8966-4ebb-b8b9-8d7757a71ad4"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Fire"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -301,6 +381,10 @@ public partial class @NIS: IInputActionCollection2, IDisposable
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
         m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
         m_Player_Grab = m_Player.FindAction("Grab", throwIfNotFound: true);
+        m_Player_Pistol = m_Player.FindAction("Pistol", throwIfNotFound: true);
+        m_Player_Shotgun = m_Player.FindAction("Shotgun", throwIfNotFound: true);
+        m_Player_RocketLauncher = m_Player.FindAction("RocketLauncher", throwIfNotFound: true);
+        m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
     }
 
     ~@NIS()
@@ -385,6 +469,10 @@ public partial class @NIS: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Jump;
     private readonly InputAction m_Player_Look;
     private readonly InputAction m_Player_Grab;
+    private readonly InputAction m_Player_Pistol;
+    private readonly InputAction m_Player_Shotgun;
+    private readonly InputAction m_Player_RocketLauncher;
+    private readonly InputAction m_Player_Fire;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -412,6 +500,22 @@ public partial class @NIS: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/Grab".
         /// </summary>
         public InputAction @Grab => m_Wrapper.m_Player_Grab;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/Pistol".
+        /// </summary>
+        public InputAction @Pistol => m_Wrapper.m_Player_Pistol;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/Shotgun".
+        /// </summary>
+        public InputAction @Shotgun => m_Wrapper.m_Player_Shotgun;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/RocketLauncher".
+        /// </summary>
+        public InputAction @RocketLauncher => m_Wrapper.m_Player_RocketLauncher;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/Fire".
+        /// </summary>
+        public InputAction @Fire => m_Wrapper.m_Player_Fire;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -450,6 +554,18 @@ public partial class @NIS: IInputActionCollection2, IDisposable
             @Grab.started += instance.OnGrab;
             @Grab.performed += instance.OnGrab;
             @Grab.canceled += instance.OnGrab;
+            @Pistol.started += instance.OnPistol;
+            @Pistol.performed += instance.OnPistol;
+            @Pistol.canceled += instance.OnPistol;
+            @Shotgun.started += instance.OnShotgun;
+            @Shotgun.performed += instance.OnShotgun;
+            @Shotgun.canceled += instance.OnShotgun;
+            @RocketLauncher.started += instance.OnRocketLauncher;
+            @RocketLauncher.performed += instance.OnRocketLauncher;
+            @RocketLauncher.canceled += instance.OnRocketLauncher;
+            @Fire.started += instance.OnFire;
+            @Fire.performed += instance.OnFire;
+            @Fire.canceled += instance.OnFire;
         }
 
         /// <summary>
@@ -473,6 +589,18 @@ public partial class @NIS: IInputActionCollection2, IDisposable
             @Grab.started -= instance.OnGrab;
             @Grab.performed -= instance.OnGrab;
             @Grab.canceled -= instance.OnGrab;
+            @Pistol.started -= instance.OnPistol;
+            @Pistol.performed -= instance.OnPistol;
+            @Pistol.canceled -= instance.OnPistol;
+            @Shotgun.started -= instance.OnShotgun;
+            @Shotgun.performed -= instance.OnShotgun;
+            @Shotgun.canceled -= instance.OnShotgun;
+            @RocketLauncher.started -= instance.OnRocketLauncher;
+            @RocketLauncher.performed -= instance.OnRocketLauncher;
+            @RocketLauncher.canceled -= instance.OnRocketLauncher;
+            @Fire.started -= instance.OnFire;
+            @Fire.performed -= instance.OnFire;
+            @Fire.canceled -= instance.OnFire;
         }
 
         /// <summary>
@@ -567,5 +695,33 @@ public partial class @NIS: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnGrab(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Pistol" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnPistol(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Shotgun" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnShotgun(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "RocketLauncher" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnRocketLauncher(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Fire" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnFire(InputAction.CallbackContext context);
     }
 }
