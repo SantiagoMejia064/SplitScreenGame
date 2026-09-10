@@ -16,25 +16,24 @@ public class WeaponSpawnerBasic : MonoBehaviour
     private void Awake()
     {
         controls = new NIS();
-        
     }
 
     private void OnEnable()
     {
-        controls.Enable();
+        controls.Player.Enable();
 
-        controls.Player.Pistol.performed += OnPistol;
+        controls.Player.Pistola.performed += OnPistol;
         controls.Player.Shotgun.performed += OnShotgun;
         controls.Player.RocketLauncher.performed += OnRocketLauncher;
     }
 
     private void OnDisable()
     {
-        controls.Player.Pistol.performed -= OnPistol;
+        controls.Player.Pistola.performed -= OnPistol;
         controls.Player.Shotgun.performed -= OnShotgun;
         controls.Player.RocketLauncher.performed -= OnRocketLauncher;
 
-        controls.Disable();
+        controls.Player.Disable();
     }
 
     private void OnPistol(InputAction.CallbackContext context)
@@ -55,27 +54,24 @@ public class WeaponSpawnerBasic : MonoBehaviour
     private void CreatePistol()
     {
         DestroyCurrentWeapon();
-        currentWeapon = Instantiate(pistolPrefab, 
-        spawnPoint.position, spawnPoint.rotation);
 
+        currentWeapon = Instantiate(pistolPrefab, spawnPoint.position, spawnPoint.rotation);
         currentWeapon.transform.SetParent(spawnPoint.transform);
     }
 
     private void CreateShotgun()
     {
         DestroyCurrentWeapon();
-        currentWeapon = Instantiate(shotgunPrefab, 
-        spawnPoint.position, spawnPoint.rotation);
 
+        currentWeapon = Instantiate(shotgunPrefab, spawnPoint.position, spawnPoint.rotation);
         currentWeapon.transform.SetParent(spawnPoint.transform);
     }
 
     private void CreateRocketLauncher()
     {
         DestroyCurrentWeapon();
-        currentWeapon = Instantiate(rocketLauncherPrefab, 
-        spawnPoint.position, spawnPoint.rotation);
 
+        currentWeapon = Instantiate(rocketLauncherPrefab, spawnPoint.position, spawnPoint.rotation);
         currentWeapon.transform.SetParent(spawnPoint.transform);
     }
 
@@ -86,7 +82,4 @@ public class WeaponSpawnerBasic : MonoBehaviour
             Destroy(currentWeapon);
         }
     }
-
-
-
 }

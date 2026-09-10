@@ -43,7 +43,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Pistol",
+                    "name": "Pistola",
                     "type": "Button",
                     "id": "b253706b-5e6d-4b72-8c81-7f3015a06043",
                     "expectedControlType": "",
@@ -219,7 +219,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Pistol",
+                    "action": "Pistola",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

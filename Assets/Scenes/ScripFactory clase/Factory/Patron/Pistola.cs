@@ -4,6 +4,6 @@ public class Pistol : Weapon
 {
     public override void Fire()
     {
-        Debug.Log("Pistol fired!");
+        Debug.Log("Pistola: ¡BANG!");
     }
 }

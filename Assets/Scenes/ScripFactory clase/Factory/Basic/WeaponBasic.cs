@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class WeaponBasic : MonoBehaviour
 {
-    [SerializeField] private WeaponTypeEnum weaponType;
+    [SerializeField] private WeaponType weaponType;
 
-    public WeaponTypeEnum GetWeaponType()
+    public WeaponType GetWeaponType()
     {
         return weaponType;
     }

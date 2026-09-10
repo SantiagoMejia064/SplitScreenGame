@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3235848143351824302}
   - component: {fileID: 4885650028489490385}
   - component: {fileID: 2355234245779380325}
-  - component: {fileID: 6695642015532533626}
+  - component: {fileID: -4572646756337991780}
   m_Layer: 0
   m_Name: pistola
   m_TagString: Untagged
@@ -113,7 +113,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6695642015532533626
+--- !u!114 &-4572646756337991780
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7272510372780226566}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7bd937dd42dc68438fc74554adf814f, type: 3}
+  m_Script: {fileID: 11500000, guid: 67b6f9fd7e37465488e59127e6fb2fa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pistol
-  weaponName: 
+  weaponName: Pistola

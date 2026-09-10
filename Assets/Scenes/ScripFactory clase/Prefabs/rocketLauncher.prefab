@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3118609184517066342}
   - component: {fileID: 2422794980147578512}
   - component: {fileID: 4372747576542313741}
-  - component: {fileID: 8324233690333188118}
+  - component: {fileID: -4977249030061565104}
   m_Layer: 0
   m_Name: rocketLauncher
   m_TagString: Untagged
@@ -113,7 +113,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8324233690333188118
+--- !u!114 &-4977249030061565104
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2981499041207602221}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39766d077c5fb5842a71e01fbabd1de9, type: 3}
+  m_Script: {fileID: 11500000, guid: 14b0b3025bd560b4f883d350b63f0aeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RocketLauncher
-  weaponName: 
+  weaponName: Rocket Launcher

@@ -5,32 +5,37 @@ public class WeaponFactory : MonoBehaviour
     [SerializeField] private Weapon pistolPrefab;
     [SerializeField] private Weapon shotgunPrefab;
     [SerializeField] private Weapon rocketLauncherPrefab;
-    
-    public Weapon CreateWeapon(WeaponTypeEnum weaponType, Transform spawnPoint)
+
+    public Weapon CreateWeapon(WeaponType weaponType, Transform spawnPoint)
     {
         Weapon weaponPrefab = null;
 
         switch (weaponType)
         {
-            case WeaponTypeEnum.Pistol:
+            case WeaponType.Pistol:
                 weaponPrefab = pistolPrefab;
                 break;
 
-            case WeaponTypeEnum.Shotgun:
+            case WeaponType.Shotgun:
                 weaponPrefab = shotgunPrefab;
                 break;
 
-            case WeaponTypeEnum.RocketLauncher:
+            case WeaponType.RocketLauncher:
                 weaponPrefab = rocketLauncherPrefab;
                 break;
         }
 
-        if (weaponPrefab != null)
+        if (weaponPrefab == null)
         {
             Debug.LogError("No existe un prefab configurado para: " + weaponType);
+
             return null;
         }
 
-        return Instantiate(weaponPrefab, spawnPoint.position, spawnPoint.rotation); 
+        return Instantiate(
+            weaponPrefab,
+            spawnPoint.position,
+            spawnPoint.rotation
+        );
     }
 }

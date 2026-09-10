@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3676137592205572248}
   - component: {fileID: 3414692230515618005}
   - component: {fileID: 8656902902172074870}
-  - component: {fileID: -6203252503435180630}
+  - component: {fileID: 8271398534160636100}
   m_Layer: 0
   m_Name: shotgun
   m_TagString: Untagged
@@ -113,7 +113,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-6203252503435180630
+--- !u!114 &8271398534160636100
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2588106756173477188}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8948b66a0b9b5a94c9e389a147fe8131, type: 3}
+  m_Script: {fileID: 11500000, guid: b122c85439f7b7a43909b3161543a055, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Shotgun
-  weaponName: 
+  weaponName: Shotgun

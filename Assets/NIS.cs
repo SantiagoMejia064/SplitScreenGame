@@ -129,7 +129,7 @@ public partial class @NIS: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Pistol"",
+                    ""name"": ""Pistola"",
                     ""type"": ""Button"",
                     ""id"": ""b253706b-5e6d-4b72-8c81-7f3015a06043"",
                     ""expectedControlType"": """",
@@ -305,7 +305,7 @@ public partial class @NIS: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Pistol"",
+                    ""action"": ""Pistola"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -381,7 +381,7 @@ public partial class @NIS: IInputActionCollection2, IDisposable
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
         m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
         m_Player_Grab = m_Player.FindAction("Grab", throwIfNotFound: true);
-        m_Player_Pistol = m_Player.FindAction("Pistol", throwIfNotFound: true);
+        m_Player_Pistola = m_Player.FindAction("Pistola", throwIfNotFound: true);
         m_Player_Shotgun = m_Player.FindAction("Shotgun", throwIfNotFound: true);
         m_Player_RocketLauncher = m_Player.FindAction("RocketLauncher", throwIfNotFound: true);
         m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
@@ -469,7 +469,7 @@ public partial class @NIS: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Jump;
     private readonly InputAction m_Player_Look;
     private readonly InputAction m_Player_Grab;
-    private readonly InputAction m_Player_Pistol;
+    private readonly InputAction m_Player_Pistola;
     private readonly InputAction m_Player_Shotgun;
     private readonly InputAction m_Player_RocketLauncher;
     private readonly InputAction m_Player_Fire;
@@ -501,9 +501,9 @@ public partial class @NIS: IInputActionCollection2, IDisposable
         /// </summary>
         public InputAction @Grab => m_Wrapper.m_Player_Grab;
         /// <summary>
-        /// Provides access to the underlying input action "Player/Pistol".
+        /// Provides access to the underlying input action "Player/Pistola".
         /// </summary>
-        public InputAction @Pistol => m_Wrapper.m_Player_Pistol;
+        public InputAction @Pistola => m_Wrapper.m_Player_Pistola;
         /// <summary>
         /// Provides access to the underlying input action "Player/Shotgun".
         /// </summary>
@@ -554,9 +554,9 @@ public partial class @NIS: IInputActionCollection2, IDisposable
             @Grab.started += instance.OnGrab;
             @Grab.performed += instance.OnGrab;
             @Grab.canceled += instance.OnGrab;
-            @Pistol.started += instance.OnPistol;
-            @Pistol.performed += instance.OnPistol;
-            @Pistol.canceled += instance.OnPistol;
+            @Pistola.started += instance.OnPistola;
+            @Pistola.performed += instance.OnPistola;
+            @Pistola.canceled += instance.OnPistola;
             @Shotgun.started += instance.OnShotgun;
             @Shotgun.performed += instance.OnShotgun;
             @Shotgun.canceled += instance.OnShotgun;
@@ -589,9 +589,9 @@ public partial class @NIS: IInputActionCollection2, IDisposable
             @Grab.started -= instance.OnGrab;
             @Grab.performed -= instance.OnGrab;
             @Grab.canceled -= instance.OnGrab;
-            @Pistol.started -= instance.OnPistol;
-            @Pistol.performed -= instance.OnPistol;
-            @Pistol.canceled -= instance.OnPistol;
+            @Pistola.started -= instance.OnPistola;
+            @Pistola.performed -= instance.OnPistola;
+            @Pistola.canceled -= instance.OnPistola;
             @Shotgun.started -= instance.OnShotgun;
             @Shotgun.performed -= instance.OnShotgun;
             @Shotgun.canceled -= instance.OnShotgun;
@@ -696,12 +696,12 @@ public partial class @NIS: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnGrab(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Pistol" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "Pistola" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnPistol(InputAction.CallbackContext context);
+        void OnPistola(InputAction.CallbackContext context);
         /// <summary>
         /// Method invoked when associated input action "Shotgun" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>

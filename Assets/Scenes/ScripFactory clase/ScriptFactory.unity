@@ -289,7 +289,8 @@ GameObject:
   - component: {fileID: 1124840420}
   - component: {fileID: 1124840419}
   - component: {fileID: 1124840418}
-  - component: {fileID: 1124840422}
+  - component: {fileID: 1124840424}
+  - component: {fileID: 1124840423}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -391,7 +392,7 @@ Transform:
   - {fileID: 720721191}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1124840422
+--- !u!114 &1124840423
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -400,13 +401,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1124840417}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8e110ba69f11334984d8a7f3fcadbaf, type: 3}
+  m_Script: {fileID: 11500000, guid: add48c97e9dbe74489792cbcbb8d5563, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WeaponSpawnerBasic
-  pistolPrefab: {fileID: 7272510372780226566, guid: d21745cbbb9fe2a49ac9ec77bcf7721c, type: 3}
-  shotgunPrefab: {fileID: 2588106756173477188, guid: ec995a1a01df003429510b93a7f7cf68, type: 3}
-  rocketLauncherPrefab: {fileID: 2981499041207602221, guid: 0eb8ebdcc8500f94f8bb93fc1b316a4a, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponSpawnerFactory
+  weaponFactory: {fileID: 1722326440}
   spawnPoint: {fileID: 720721191}
+--- !u!114 &1124840424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124840417}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e7c18ac51a21489741e457e86053e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponBasic
+  weaponType: 0
 --- !u!1 &1189123193
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,12 +710,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1722326438}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e254b76a7ffbfc4a9efda91a3bc5829, type: 3}
+  m_Script: {fileID: 11500000, guid: f920a86cfd15bfd40a4575e36c59fe3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponFactory
-  pistolPrefab: {fileID: 6695642015532533626, guid: d21745cbbb9fe2a49ac9ec77bcf7721c, type: 3}
-  shotgunPrefab: {fileID: 8324233690333188118, guid: 0eb8ebdcc8500f94f8bb93fc1b316a4a, type: 3}
-  rocketLauncherPrefab: {fileID: -6203252503435180630, guid: ec995a1a01df003429510b93a7f7cf68, type: 3}
+  pistolPrefab: {fileID: -4572646756337991780, guid: d21745cbbb9fe2a49ac9ec77bcf7721c, type: 3}
+  shotgunPrefab: {fileID: 8271398534160636100, guid: ec995a1a01df003429510b93a7f7cf68, type: 3}
+  rocketLauncherPrefab: {fileID: -4977249030061565104, guid: 0eb8ebdcc8500f94f8bb93fc1b316a4a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
